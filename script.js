@@ -1,14 +1,13 @@
 //your JS code here. If required.
 function allMethods() {
-  //write your code here
-	let obj = Math;
-    return Object.getOwnPropertyNames(obj).filter(function(property) {
-      return typeof obj[property] === 'function';
-    });
+    //write your code here
+      let obj = Math;
+      let ans =  Object.getOwnPropertyNames(obj).filter(function(property) {
+        return typeof obj[property] === 'function';
+      });
+      
+      return ans.join(", ");
+    }
     
-  }
   
-  console.log(getAllMethods(Math));
-}
-
-// alert(allMethods());
+  alert(allMethods());
